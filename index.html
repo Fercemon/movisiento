@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="shortcut icon" type="image/png" href="img/Imagotipo.png" />
+    <title>MOVISIENTO</title>
+</head>
+
+<body>
+    <header>
+        <img id="logotipo" src="img/ImagotipoT.png" alt="logotipo">
+        <div class="header-btns">
+            <img id="menu" src="img/menu.png" alt="menu picture">
+        </div>
+        <nav class="nav-bar">
+            <a class="nav-links link1" href="index.html">Home</a>
+            <a class="nav-links link2" href="about.html">About</a>
+            <a class="nav-links link3" href="">Exp Corporal  </a>
+            <a class="nav-links link4" href="">Exp Visual</a>
+            <a class="nav-links link5" href="">Exp Musical</a>
+            <a class="nav-links link6" href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main id='main'>
+        <div class="home-screen">
+            <video id="introVideo" autoplay muted>
+            <source src="video/intro_de_movisiento_Trim.mp4" type="video/mp4">
+        </video>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/movisiento/?hl=es"><img src="img/instagram.png" alt="instagram pictue"></a>
+        <a href="https://www.youtube.com/channel/UCTCV8gGMpXhlLE6ryEEZn3A"><img src="img/youtube1.png" alt="facebook pictue"></a>
+        <span class="subscribe-text">Subscribe to <span class="hand-written newsletter">Newsletters</span></span>
+    </footer>
+
+    <script src="script/script.js"></script>
+    <script>
+        document.querySelector("#introVideo").play();
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5d1e07f222d70e36c2a4250a/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>

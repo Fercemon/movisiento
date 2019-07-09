@@ -1,0 +1,328 @@
+/* color #7AA24C */
+
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300i&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #0C0C0C;
+}
+
+p,
+li {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.2rem;
+}
+
+p {
+    text-align: justify;
+}
+
+.hand-written {
+    font-size: 1.6rem;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem 0 2rem 1rem;
+}
+
+.fade-out {
+    animation: fadeOut 1s;
+}
+
+@keyframe faceOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    z-index: 5;
+}
+
+#logotipo {
+    display: block;
+    width: 4rem;
+}
+
+#menu {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 3rem;
+    margin: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding-top: 7rem;
+    transition: all 0.5s;
+}
+
+.nav-bar a {
+    display: block;
+    position: relative;
+    left: -100%;
+    font-size: 1.3rem;
+    padding: 0.7rem 0;
+    margin: 0 1rem;
+    border-bottom: 1px solid #7AA24C;
+}
+
+.nav-bar a:hover {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+.link1 {
+    transition: all 1s ease-in-out;
+}
+
+.link2 {
+    transition: all 1s 0.1s ease-in-out;
+}
+
+.link3 {
+    transition: all 1s 0.2s ease-in-out;
+}
+
+.link4 {
+    transition: all 1s 0.3s ease-in-out;
+}
+
+.link5 {
+    transition: all 1s 0.4s ease-in-out;
+}
+
+.link6 {
+    transition: all 1s 0.5s ease-in-out;
+}
+
+
+/* main section */
+
+main {
+    transition: margin-left 1.5s;
+}
+
+.home-screen {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#introVideo {
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #introVideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #introVideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #introVideo {
+        display: none;
+    }
+    .home-screen {
+        background-image: url(../img/movisiento.png);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+/* footer */
+
+footer {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+footer a {
+    padding-right: 1rem;
+}
+
+footer img {
+    height: 2.5rem;
+    filter: grayscale(0.7);
+}
+
+footer img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.subscribe-text {
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: 0.9rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.newsletter {
+    font-size: 1.9rem;
+}
+
+
+/* about page */
+
+.about-main {
+    padding: 2rem;
+    padding-top: 10rem;
+}
+
+.about-main::before {
+    content: ' ';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18rem;
+    background-image: linear-gradient(to bottom, #fff 20%, transparent);
+}
+
+.about-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/pablo_face.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.about-headings {
+    font-size: 4rem;
+}
+
+.quote {
+    margin: 1rem 0;
+}
+
+.text {}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 3rem;
+}
+
+
+/* contact page */
+
+.subscribe-form {
+    margin-top: 3rem;
+}
+
+.form-title {
+    text-transform: uppercase;
+}
+
+form {
+    display: block;
+    position: relative;
+    padding: 10px 0 10px 3%;
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.indicates-required {
+    text-align: right;
+    font-size: 11px;
+    margin-right: 4%;
+}
+
+.asterisk {
+    color: #e85c41;
+    font-size: 150%;
+    font-weight: normal;
+    position: relative;
+    top: 5px;
+    margin-left: 0.7rem;
+}
+
+.mc-field-group {
+    padding-bottom: 3%;
+    min-height: 50px;
+}
+
+input {
+    width: 93%;
+    margin: 1rem 0;
+    border: 1px solid #7AA24C;
+    border-radius: 3px;
+    padding: 0.8rem 0;
+    text-indent: 2%;
+    padding-left: 1rem;
+    font-family: 'Caveat', cursive;
+    font-size: 1.7rem;
+}
+
+#mc_embed_signup .button {
+    border-radius: 4px;
+    background-color: rgba(122, 162, 76, 0.349);
+    width: 40%;
+    cursor: pointer;
+    padding-left: 0;
+}
+
+#mc_embed_signup .button:hover {
+    background-color: #7AA24C;
+}
+
+#tawkchat-container {
+    width: 2rem;
+}
